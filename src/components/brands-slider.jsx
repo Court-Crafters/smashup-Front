@@ -1,63 +1,83 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
-import { Navigation , Pagination} from 'swiper/modules';
-
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const BrandSliderSection = () => {
+  const logos = [
+    "assets/images/logo/brandLogo1_1.png",
+    "assets/images/logo/brandLogo1_2.png",
+    "assets/images/logo/brandLogo1_3.png",
+    "assets/images/logo/brandLogo1_4.png",
+    "assets/images/logo/brandLogo1_5.png",
+    "assets/images/logo/brandLogo1_3.png",
+  ];
+
   return (
     <div className="brand-slider-section section-padding fix">
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
-            <h2 className="single-section-title">Millions of clients trust us.</h2>
+            <h2 className="single-section-title">
+              Millions of clients trust us.
+            </h2>
             <Swiper
-              modules={[Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation]}
               loop={true}
-              pagination={{ clickable: true }}
-              navigation={true}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 2, centeredSlides: true },
-                768: { slidesPerView: 3 },
-                1025: { slidesPerView: 4 },
-                1400: { slidesPerView: 5 },
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
               }}
-              className="swiper-container"
+              pagination={{
+                clickable: true,
+              }}
+              slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                576: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                992: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
             >
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_1.png" alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_2.png" alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_3.png" alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_4.png" alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_5.png" alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="brand-logo">
-                  <img src="assets/images/logo/brandLogo1_3.png" alt="logo" />
-                </div>
-              </SwiperSlide>
+              {logos.map((logo, index) => (
+                <SwiperSlide
+                  key={index}
+                  style={{
+                    width: "400px", // Fixed width per logo
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <div className="brand-logo">
+                    <img
+                      src={logo}
+                      alt={`Partner ${index + 1}`}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
