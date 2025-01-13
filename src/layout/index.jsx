@@ -4,6 +4,7 @@ const Header = React.lazy(() => import("../components/header"));
 const CanvasSlider = React.lazy(() => import("../components/header-mobile"));
 const HeroSection = React.lazy(() => import("../components/heroSection"));
 const MouseCursor = React.lazy(() => import("../components/mouseEffect"));
+const BrandsSlider = React.lazy(() => import("../components/brands-slider"));
 
 const App = () => {
   // Media query to detect mobile devices
@@ -41,11 +42,7 @@ const App = () => {
       </button>
       {isMobile ? <CanvasSlider /> : <Header />}
       <HeroSection />
-      <div
-        style={{
-          height: "20000px",
-        }}
-      ></div>
+      <BrandsSlider />
     </Suspense>
   );
 };

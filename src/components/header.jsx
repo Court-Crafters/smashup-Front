@@ -1,28 +1,26 @@
 import { useEffect, useRef } from "react";
 
-
 export default function Header() {
- // headerRef to be sticky
- const headerRef = useRef(null); // Reference for the header element
+  // headerRef to be sticky
+  const headerRef = useRef(null); // Reference for the header element
 
- useEffect(() => {
-   const handleScroll = () => {
-     if (window.scrollY > 100) {
-        console.log(headerRef.current);
-       headerRef.current?.classList.add("sticky");
-     } else {
-       headerRef.current?.classList.remove("sticky");
-     }
-   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        headerRef.current?.classList.add("sticky");
+      } else {
+        headerRef.current?.classList.remove("sticky");
+      }
+    };
 
-   // Attach the scroll event listener
-   window.addEventListener("scroll", handleScroll);
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
-   // Cleanup the event listener on component unmount
-   return () => {
-     window.removeEventListener("scroll", handleScroll);
-   };
- }, []);
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="header-section-1" ref={headerRef}>

@@ -5,7 +5,7 @@ const Preloader = () => {
 
   useEffect(() => {
     // Simulate loading delay
-    const timer = setTimeout(() => setIsLoading(false), 50000000); // Adjust time as needed
+    const timer = setTimeout(() => setIsLoading(false), 500); // Adjust time as needed
     return () => clearTimeout(timer);
   }, []);
 
