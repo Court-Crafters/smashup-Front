@@ -5,6 +5,18 @@ const CanvasSlider = React.lazy(() => import("../components/header-mobile"));
 const HeroSection = React.lazy(() => import("../components/heroSection"));
 const MouseCursor = React.lazy(() => import("../components/mouseEffect"));
 const BrandsSlider = React.lazy(() => import("../components/brands-slider"));
+const AboutUs = React.lazy(() => import("../components/aboutUs"));
+const WorkProcess = React.lazy(() => import("../components/workProcess"));
+const AdvantageSection = React.lazy(() => import("../components/advantageSection"));
+const WhyOurApp = React.lazy(() => import("../components/whyOurApp"));
+const CounterSection = React.lazy(() => import("../components/counterSection"));
+const FaqSection = React.lazy(() => import("../components/faqSection"));
+const TestimonialSection = React.lazy(() => import("../components/testimonialSection"));
+const FeatureSection = React.lazy(() => import("../components/featureSection")); 
+const PricingSection = React.lazy(() => import("../components/pricingSection"));
+const LinkSection = React.lazy(() => import("../components/linkSection"));
+const BlogSection = React.lazy(() => import("../components/blogSection"));
+const FooterSection = React.lazy(() => import("../components/footerSection"));
 
 const App = () => {
   // Media query to detect mobile devices
@@ -43,6 +55,19 @@ const App = () => {
       {isMobile ? <CanvasSlider /> : <Header />}
       <HeroSection />
       <BrandsSlider />
+      <AboutUs />
+      <WorkProcess />
+      <AdvantageSection />
+      <WhyOurApp />
+      <CounterSection />
+      <FaqSection />
+      <TestimonialSection />
+      <FeatureSection />
+      <PricingSection />
+      <LinkSection />
+      <BlogSection />
+      <FooterSection />
+    
     </Suspense>
   );
 };
