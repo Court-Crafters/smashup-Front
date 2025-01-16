@@ -17,7 +17,6 @@ const PricingSection = React.lazy(() => import("../components/pricingSection"));
 const LinkSection = React.lazy(() => import("../components/linkSection"));
 const BlogSection = React.lazy(() => import("../components/blogSection"));
 const FooterSection = React.lazy(() => import("../components/footerSection"));
-const Test = React.lazy(() => import("../components/Test"));
 const App = () => {
   // Media query to detect mobile devices
   const [isMobile, setIsMobile] = React.useState(false);
@@ -67,7 +66,6 @@ const App = () => {
       <LinkSection />
       <BlogSection />
       <FooterSection />
-      <Test />
     
     </Suspense>
   );
