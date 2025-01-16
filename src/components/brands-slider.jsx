@@ -31,9 +31,6 @@ const BrandSliderSection = () => {
                 delay: 1000,
                 disableOnInteraction: false,
               }}
-              pagination={{
-                clickable: true,
-              }}
               slidesPerView={5}
               spaceBetween={30}
               breakpoints={{
