@@ -8,7 +8,7 @@ export default function WorkProcess() {
           How It Work <img src="assets/images/icon/fireIcon.svg" alt="icon" />
         </div>
         <h2 className="title wow fadeInUp" data-wow-delay=".4s">
-          Make Your Device Manage Everything For You!
+          Let us Manage Everything For You!
         </h2>
       </div>
       <div className="work-process-wrapper style1">
@@ -24,7 +24,7 @@ export default function WorkProcess() {
               <div className="step">STEP - 01</div>
               <div className="title">Download App</div>
               <div className="text">
-                There are many variations of passages of Lorem
+              Download the app from the App Store or Google Play.
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function WorkProcess() {
               <div className="step">STEP - 02</div>
               <div className="title">Create account</div>
               <div className="text">
-                There are many variations of passages of Lorem
+              Create your account and set your preferences.
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function WorkProcess() {
               <div className="step">STEP - 03</div>
               <div className="title">Install App, &amp; Enjoy</div>
               <div className="text">
-                There are many variations of passages of Lorem
+              Start playing, chatting, and shopping, all in one place!
               </div>
             </div>
           </div>

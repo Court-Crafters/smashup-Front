@@ -60,11 +60,11 @@ const App = () => {
       <WhyOurApp />
       <CounterSection />
       <FaqSection />
-      <TestimonialSection />
+      {/*<TestimonialSection />
       <FeatureSection />
-      <PricingSection />
+      <PricingSection />*/}
       <LinkSection />
-      <BlogSection />
+      {/* <BlogSection />*/}
       <FooterSection />
     
     </Suspense>

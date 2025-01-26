@@ -17,13 +17,10 @@ export default function AdvantageSection() {
                         <img src="assets/images/icon/fireIcon.svg" alt="icon" />
                       </div>
                       <h2 className="title">
-                        Get Benefit By Using Trending Apps
+                      Enhance Your Padel Experience with P4P
                       </h2>
                       <p className="section-desc">
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which
-                        don't look even slightly
+                      We want to turn your love for padel into a seamless, joyful, and rewarding journey by providing :
                       </p>
                     </div>
                     <div
@@ -43,7 +40,7 @@ export default function AdvantageSection() {
                             src="assets/images/icon/checkmarkIcon.svg"
                             alt="icon"
                           />
-                          SEO Optimized
+                          Community Connection
                         </li>
                       </ul>
                       <ul className="checklist style1">
@@ -52,14 +49,14 @@ export default function AdvantageSection() {
                             src="assets/images/icon/checkmarkIcon.svg"
                             alt="icon"
                           />{" "}
-                          Cloud Storage{" "}
+                          Progress Tracking{" "}
                         </li>
                         <li>
                           <img
                             src="assets/images/icon/checkmarkIcon.svg"
                             alt="icon"
                           />{" "}
-                          Strong Security{" "}
+                          Competitive Mode{" "}
                         </li>
                       </ul>
                     </div>

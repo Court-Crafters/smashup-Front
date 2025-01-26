@@ -54,17 +54,15 @@ export default function AboutUs() {
                       <img src="assets/images/icon/fireIcon.svg" alt="icon" />
                     </div>
                     <h2 className="title wow fadeInUp" data-wow-delay=".4s">
-                      Simple Reports &amp; Analytics Backdown As it
+                      Padel for Passion is a one-stop app for all this sport
+                      enthusiasts
                     </h2>
                     <p
                       className="section-desc wow fadeInUp"
                       data-wow-delay=".6s"
                     >
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use
+                      Join the growing community passionate about padel and take
+                      your game to the next level with P4P:
                     </p>
                   </div>
                   <ul
@@ -76,21 +74,37 @@ export default function AboutUs() {
                         src="assets/images/icon/checkmarkIcon.svg"
                         alt="icon"
                       />{" "}
-                      With our Technological and Marketing Solutions.
+                      With our Matchmaking find your ideal match based on skill
+                      level and availability.
                     </li>
                     <li>
                       <img
                         src="assets/images/icon/checkmarkIcon.svg"
                         alt="icon"
                       />{" "}
-                      We are trusted all over the world.{" "}
+                      Coaches can easily create and manage their sessions.{" "}
                     </li>
                     <li>
                       <img
                         src="assets/images/icon/checkmarkIcon.svg"
                         alt="icon"
                       />{" "}
-                      Start Your 14 Days Free Trials Today!{" "}
+                      Compete & organize your events effortlessly "Leagues or
+                      Tounements".{" "}
+                    </li>
+                    <li>
+                      <img
+                        src="assets/images/icon/checkmarkIcon.svg"
+                        alt="icon"
+                      />{" "}
+                      With our chat connect seamlessly with your bodies.{" "}
+                    </li>
+                    <li>
+                      <img
+                        src="assets/images/icon/checkmarkIcon.svg"
+                        alt="icon"
+                      />{" "}
+                      With our shop you can sell or buy padel gear and equipments.{" "}
                     </li>
                   </ul>
                   <a
@@ -98,7 +112,7 @@ export default function AboutUs() {
                     data-wow-delay=".2s"
                     href="about.html"
                   >
-                    Discover More
+                    Your padel journey starts here
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={16}

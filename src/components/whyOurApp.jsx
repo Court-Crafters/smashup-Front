@@ -12,7 +12,7 @@ export default function WhyOurApp() {
               <img src="assets/images/icon/fireIcon.svg" alt="icon" />
             </div>
             <h2 className="title">
-              Our app is great for individuals, startups and enterprises
+              Our app is  for all, Players, Coaches & Club owners
             </h2>
           </div>
           <div className="wcu-wrapper style1">
@@ -24,9 +24,9 @@ export default function WhyOurApp() {
                       <img src="assets/images/icon/wcuIcon1_1.svg" alt="icon" />
                     </div>
                     <div className="content wow fadeInUp" data-wow-delay=".2s">
-                      <h4>High usability</h4>
+                      <h4>Easy matchmaking</h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Find your perfect partner or opponent in just a few clicks!
                       </p>
                     </div>
                   </div>
@@ -38,9 +38,9 @@ export default function WhyOurApp() {
                       <img src="assets/images/icon/wcuIcon1_2.svg" alt="icon" />
                     </div>
                     <div className="content">
-                      <h4>Action Reminder</h4>
+                      <h4>Join leagues & stay competitive</h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Compete, improve, and challenge yourself in exciting tournaments!
                       </p>
                     </div>
                   </div>
@@ -52,9 +52,9 @@ export default function WhyOurApp() {
                       <img src="assets/images/icon/wcuIcon1_3.svg" alt="icon" />
                     </div>
                     <div className="content">
-                      <h4>Merge Files</h4>
+                      <h4>Coaching Session </h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Promote and manage your coaching sessions.
                       </p>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export default function WhyOurApp() {
                     <div className="content">
                       <h4>Free Live Chat</h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Chat and share updates with your padel network
                       </p>
                     </div>
                   </div>
@@ -100,9 +100,9 @@ export default function WhyOurApp() {
                       <img src="assets/images/icon/wcuIcon1_5.svg" alt="icon" />
                     </div>
                     <div className="content">
-                      <h4>Social Share</h4>
+                      <h4>Marketplace</h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Access the latest gear in our shop.
                       </p>
                     </div>
                   </div>
@@ -114,9 +114,9 @@ export default function WhyOurApp() {
                       <img src="assets/images/icon/wcuIcon1_6.svg" alt="icon" />
                     </div>
                     <div className="content">
-                      <h4>Custom Shortcuts</h4>
+                      <h4>Track Progress</h4>
                       <p className="text">
-                        There are many variations of passages of Lorem Ipsum
+                      Measure your growth with stats and achievements to keep you motivated.
                       </p>
                     </div>
                   </div>

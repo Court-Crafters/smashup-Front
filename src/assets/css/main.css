@@ -444,6 +444,7 @@ input[type=radio]:checked ~ label::before {
   font-weight: 600;
   line-height: normal;
   background: var(--theme);
+  background-color: #1a22b7;
   z-index: 1;
   line-height: 1;
   overflow: hidden;
@@ -2616,8 +2617,8 @@ input[type=radio]:checked ~ label::before {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  background: rgba(116, 68, 253, 0.15);
-  color: var(--theme);
+  background: rgba(75, 92, 216, 0.2);
+  color: #1a22b7;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -5833,9 +5834,9 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: rgba(116, 68, 253, 0.15);
+  background: rgba(75, 92, 216, 0.1);
   backdrop-filter: blur(2px);
-  color: var(--theme);
+  color: #1a22b7;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
   font-style: normal;

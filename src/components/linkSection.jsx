@@ -32,16 +32,21 @@ export default function LinkSection() {
                         className="title text-white wow fadeInUp"
                         data-wow-delay=".4s"
                       >
-                        Download our app and start your free trail to get
-                        started today!
+                        Download our app and enjoy your passion
                       </h2>
                       <p
                         className="section-desc text-white mxw-651 wow fadeInUp"
                         data-wow-delay=".6s"
                       >
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised
+                        Join the revolution in padel today! Connect with
+                        players, book coaching sessions, participate in leagues,
+                        and access everything you need to elevate your game.
+                        Whether you're just starting out or a seasoned pro, our
+                        app makes it easier than ever to build your padel
+                        community, track your progress, and enjoy the sport with
+                        others who share your passion. Start your journey
+                        today—download now and experience padel like never
+                        before!
                       </p>
                     </div>
                     <a

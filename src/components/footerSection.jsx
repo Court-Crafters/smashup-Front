@@ -20,14 +20,16 @@ export default function FooterSection() {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <a href="index.html">
-                    <img src="assets/images/logo/logo.svg" alt="logo-img" />
+                    <img
+                      src="assets/images/logo/p1.png"
+                      alt="logo-img"
+                      width="90"
+                      height="90"
+                    />
                   </a>
                 </div>
                 <div className="footer-content">
-                  <p>
-                    It is a long established fact that from will be distracted
-                    by the readable from when looking.
-                  </p>
+                  <p>Play with Passion, Connect with Players!</p>
                   <div className="store-links">
                     <div className="apple">
                       <a href="#">
@@ -133,8 +135,8 @@ export default function FooterSection() {
                   <div className="subtitle">Address</div>
                   <div className="widget-head">Ready to get started?</div>
                   <div className="text">
-                    It is a long established fact that a reader will be
-                    distracted layout.
+                    Contact us today! We’re here to answer your questions and
+                    help you get the most out of your padel experience.
                   </div>
                   <div className="info">
                     <div className="icon">
@@ -163,10 +165,12 @@ export default function FooterSection() {
                     </div>
                     <div className="link">
                       <a href="mailto:contact.tech@gmail.com">
-                        contact.tech@gmail.com
+                        contact@padel4passion.com
                       </a>{" "}
                       <br />
-                      <a href="mailto:info@Niotech.com">info@Niotech.com</a>
+                      <a href="mailto:info@Niotech.com">
+                        socials@padel4passion.com
+                      </a>
                     </div>
                   </div>
                   <div className="info">
@@ -200,9 +204,8 @@ export default function FooterSection() {
                       </svg>
                     </div>
                     <div className="link">
-                      <a href="tel:21314234323543">+880 123 654 789 00</a>{" "}
-                      <br />
-                      <a href="tel:35234523452345">+001 6520 698 00</a>
+                      <a href="tel:21314234323543">+216 20 752 696 </a> <br />
+                      <a href="tel:35234523452345">+216 25 064 521</a>
                     </div>
                   </div>
                 </div>

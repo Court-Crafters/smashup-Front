@@ -16,10 +16,10 @@ export default function CounterSection() {
                     data-wow-delay=".2s"
                   >
                     <div className="counter">
-                      <span className="counter-number">56</span>{" "}
+                      <span className="counter-number">2,500</span>{" "}
                       <span className="plus">+</span>
                     </div>
-                    <p className="text">Customers visit app every months</p>
+                    <p className="text">Matches arranged monthly</p>
                   </div>
                 </div>
                 <div className="col-xl-3 col-md-6 d-flex justify-content-center">
@@ -28,10 +28,10 @@ export default function CounterSection() {
                     data-wow-delay=".4s"
                   >
                     <div className="counter">
-                      <span className="counter-number">32</span>{" "}
-                      <span className="plus">+</span>
+                      <span className="counter-number">10</span>{" "}
+                      <span className="plus">k</span>
                     </div>
-                    <p className="text">Total downloaded of our app</p>
+                    <p className="text">Active players and coaches </p>
                   </div>
                 </div>
                 <div className="col-xl-3 col-md-6 d-flex justify-content-center">
@@ -40,10 +40,10 @@ export default function CounterSection() {
                     data-wow-delay=".6s"
                   >
                     <div className="counter">
-                      <span className="counter-number">156</span>{" "}
-                      <span className="plus">k</span>
+                      <span className="counter-number">20</span>{" "}
+                      <span className="plus">+</span>
                     </div>
-                    <p className="text">Total Members of App Users</p>
+                    <p className="text">Active players and coaches</p>
                   </div>
                 </div>
                 <div className="col-xl-3 col-md-6 d-flex justify-content-center">
@@ -52,11 +52,11 @@ export default function CounterSection() {
                     data-wow-delay=".8s"
                   >
                     <div className="counter">
-                      <span className="counter-number">42</span>{" "}
+                      <span className="counter-number">60%</span>{" "}
                       <span className="plus">+</span>
                     </div>
                     <p className="text">
-                      Satisfaction rate from our customers.
+                    Growth in Padel Participation
                     </p>
                   </div>
                 </div>

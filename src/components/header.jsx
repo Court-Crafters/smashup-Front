@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-
 export default function Header() {
   // headerRef to be sticky
   const headerRef = useRef(null); // Reference for the header element
@@ -31,7 +30,12 @@ export default function Header() {
               <div className="header-left">
                 <div className="logo">
                   <a href="index.html" className="header-logo">
-                    <img src="assets/images/logo/logo.svg" alt="logo-img" />
+                    <img
+                      src="assets/images/logo/p1.png"
+                      alt="logo-img"
+                      width="120"
+                      height="120"
+                    />
                   </a>
                 </div>
               </div>

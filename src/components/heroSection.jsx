@@ -43,9 +43,9 @@ const HeroSection = () => {
                     <div className="intro-content">
                       <div className="intro-section-title">
                         <div className="intro-subtitle">
-                          <span>News!</span>Find Your Solution{" "}
+                          <span>News!</span>Follow Your Passion{" "}
                           <img
-                            src="assets/images/icon/fireIcon.svg"
+                            src="assets/images/icon/tennis_ball.svg"
                             alt="icon"
                           />
                         </div>
@@ -53,17 +53,17 @@ const HeroSection = () => {
                           className="intro-title wow fadeInUp"
                           data-wow-delay=".2s"
                         >
-                          We Develop Websites, Applications, and Brands.
+                          We Developed this App for our Tunisian Padel Community
                         </h1>
                         <p
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
                         >
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don&apos;t look even slightly believable. If you are
-                          going to use a passage of Lorem Ipsum,
+                          "Padel-4-Passion" unites players and coaches, making
+                          padel more exciting than ever. Find your perfect
+                          match, join leagues, book sessions, and connect with
+                          the community—all in one app. Whether you’re here to
+                          play, compete, or shop, your padel journey starts now!
                         </p>
                       </div>
                       <div
@@ -118,6 +118,7 @@ const HeroSection = () => {
                             </defs>
                           </svg>
                         </a>
+                        
                       </div>
                       <div className="fancy-box-wrapper style1">
                         <div

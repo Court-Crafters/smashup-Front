@@ -20,10 +20,9 @@ export default function FaqSection() {
                       className="section-desc wow fadeInUp"
                       data-wow-delay=".6s"
                     >
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly
+                      Here are some frequently asked questions to help you get
+                      started with Padel4Passion. If you need further
+                      assistance, feel free to reach out to us!
                     </p>
                   </div>
                   <div className="faq-accordion">
@@ -41,7 +40,7 @@ export default function FaqSection() {
                             aria-expanded="true"
                             aria-controls="faq1"
                           >
-                            Looking for a solution to boost productivity?
+                            Is Padel4Passion available worldwide?
                           </button>
                         </h5>
                         <div
@@ -50,10 +49,35 @@ export default function FaqSection() {
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised
-                            words which don't look even slightly
+                            Currently, Padel4Passion is focused on Tunisia, but
+                            we plan to expand to other regions soon.
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="accordion-item mb-3 wow fadeInUp"
+                        data-wow-delay=".3s"
+                      >
+                        <h5 className="accordion-header">
+                          <button
+                            className="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq1"
+                            aria-expanded="true"
+                            aria-controls="faq1"
+                          >
+                            Who can use the application?
+                          </button>
+                        </h5>
+                        <div
+                          id="faq1"
+                          className="accordion-collapse collapse"
+                          data-bs-parent="#accordion"
+                        >
+                          <div className="accordion-body">
+                            "Padel for Passion" is for players of all levels and
+                            coaches seeking to manage sessions.
                           </div>
                         </div>
                       </div>
@@ -70,7 +94,7 @@ export default function FaqSection() {
                             aria-expanded="false"
                             aria-controls="faq2"
                           >
-                            Need an easy way to manage your projects?
+                            Can I organize tournaments?
                           </button>
                         </h5>
                         <div
@@ -79,10 +103,8 @@ export default function FaqSection() {
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised
-                            words which don't look even slightly
+                            Absolutely! Coaches and players can create or join
+                            leagues and tournaments.
                           </div>
                         </div>
                       </div>
@@ -99,7 +121,7 @@ export default function FaqSection() {
                             aria-expanded="false"
                             aria-controls="faq3"
                           >
-                            Seeking a user-friendly solution for your team?
+                            Is there a way to track my progress?
                           </button>
                         </h5>
                         <div
@@ -108,10 +130,9 @@ export default function FaqSection() {
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form, by injected humour, or randomised
-                            words which don't look even slightly
+                            Yes, the app offers performance tracking features to
+                            help you monitor your improvement in matches,
+                            coaching sessions, and leagues.
                           </div>
                         </div>
                       </div>
