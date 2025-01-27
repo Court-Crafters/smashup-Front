@@ -9,7 +9,7 @@ export default function WhyOurApp() {
           >
             <div className="subtitle">
               Why using our app
-              <img src="assets/images/icon/fireIcon.svg" alt="icon" />
+              <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
             </div>
             <h2 className="title">
               Our app is  for all, Players, Coaches & Club owners

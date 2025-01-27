@@ -3113,6 +3113,7 @@ input[type=radio]:checked ~ label::before {
   color: var(--title);
   font-family: "Urbanist", sans-serif;
   font-size: 18px;
+  
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -6449,7 +6450,7 @@ input.main-search-input::placeholder {
   margin-top: 55px;
 }
 .work-process-box.style1 .step {
-  color: var(--theme);
+  color: #1a22b7;
   text-align: center;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
@@ -6464,7 +6465,7 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  background: rgba(116, 68, 253, 0.15);
+  background: #cdff4e ;
   margin-bottom: 10px;
 }
 .work-process-box.style1 .title {

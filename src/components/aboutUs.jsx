@@ -51,7 +51,7 @@ export default function AboutUs() {
                   <div className="section-title">
                     <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
                       About Our App{" "}
-                      <img src="assets/images/icon/fireIcon.svg" alt="icon" />
+                      <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
                     </div>
                     <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                       Padel for Passion is a one-stop app for all this sport
@@ -71,38 +71,58 @@ export default function AboutUs() {
                   >
                     <li>
                       <img
-                        src="assets/images/icon/checkmarkIcon.svg"
+                        src="assets/images/icon/checked.png"
                         alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
                       />{" "}
                       With our Matchmaking find your ideal match based on skill
                       level and availability.
                     </li>
                     <li>
-                      <img
-                        src="assets/images/icon/checkmarkIcon.svg"
+                    <img
+                        src="assets/images/icon/checked.png"
                         alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
                       />{" "}
                       Coaches can easily create and manage their sessions.{" "}
                     </li>
                     <li>
-                      <img
-                        src="assets/images/icon/checkmarkIcon.svg"
+                    <img
+                        src="assets/images/icon/checked.png"
                         alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
                       />{" "}
                       Compete & organize your events effortlessly "Leagues or
                       Tounements".{" "}
                     </li>
                     <li>
-                      <img
-                        src="assets/images/icon/checkmarkIcon.svg"
+                    <img
+                        src="assets/images/icon/checked.png"
                         alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
                       />{" "}
                       With our chat connect seamlessly with your bodies.{" "}
                     </li>
                     <li>
-                      <img
-                        src="assets/images/icon/checkmarkIcon.svg"
+                    <img
+                        src="assets/images/icon/checked.png"
                         alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
                       />{" "}
                       With our shop you can sell or buy padel gear and equipments.{" "}
                     </li>

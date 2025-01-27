@@ -5,7 +5,7 @@ export default function WorkProcess() {
     <div className="container">
       <div className="section-title text-center mxw-565 mx-auto">
         <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
-          How It Work <img src="assets/images/icon/fireIcon.svg" alt="icon" />
+          How It Work <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
         </div>
         <h2 className="title wow fadeInUp" data-wow-delay=".4s">
           Let us Manage Everything For You!

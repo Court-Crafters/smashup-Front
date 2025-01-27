@@ -14,7 +14,7 @@ export default function AdvantageSection() {
                     >
                       <div className="subtitle">
                         App Advantage{" "}
-                        <img src="assets/images/icon/fireIcon.svg" alt="icon" />
+                        <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
                       </div>
                       <h2 className="title">
                       Enhance Your Padel Experience with P4P
@@ -29,33 +29,49 @@ export default function AdvantageSection() {
                     >
                       <ul className="checklist style1">
                         <li>
-                          <img
-                            src="assets/images/icon/checkmarkIcon.svg"
-                            alt="icon"
-                          />{" "}
+                        <img
+                        src="assets/images/icon/checked.png"
+                        alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
+                      />{" "}
                           Friendly Design
                         </li>
                         <li>
-                          <img
-                            src="assets/images/icon/checkmarkIcon.svg"
-                            alt="icon"
-                          />
+                        <img
+                        src="assets/images/icon/checked.png"
+                        alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
+                      />
                           Community Connection
                         </li>
                       </ul>
                       <ul className="checklist style1">
                         <li>
-                          <img
-                            src="assets/images/icon/checkmarkIcon.svg"
-                            alt="icon"
-                          />{" "}
+                        <img
+                        src="assets/images/icon/checked.png"
+                        alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
+                      />{" "}
                           Progress Tracking{" "}
                         </li>
                         <li>
-                          <img
-                            src="assets/images/icon/checkmarkIcon.svg"
-                            alt="icon"
-                          />{" "}
+                        <img
+                        src="assets/images/icon/checked.png"
+                        alt="icon"
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                        }}
+                      />{" "}
                           Competitive Mode{" "}
                         </li>
                       </ul>
