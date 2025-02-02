@@ -13,9 +13,6 @@ export default function LinkSection() {
             <div className="shape3 d-none d-xxl-block">
               <img src="assets/images/shape/ctaShape1_3.png" alt="shape" />
             </div>
-            <div className="shape4 d-none d-xxl-block">
-              <img src="assets/images/shape/ctaShape1_4.png" alt="shape" />
-            </div>
             <div className="container">
               <div className="row gy-5">
                 <div className="col-xl-8 order-2 order-xl-1">

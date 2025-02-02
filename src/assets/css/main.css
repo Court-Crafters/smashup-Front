@@ -3113,7 +3113,6 @@ input[type=radio]:checked ~ label::before {
   color: var(--title);
   font-family: "Urbanist", sans-serif;
   font-size: 18px;
-  
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -6902,7 +6901,7 @@ input.main-search-input::placeholder {
 /* 22.Counter */
 .counter-wrapper.style1 {
   border-radius: 30px;
-  background-color: var(--theme);
+  background-color: #1a22b7;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -7838,7 +7837,7 @@ input.main-search-input::placeholder {
 .cta-wrapper.style1 {
   position: relative;
   border-radius: 50px;
-  background: var(--theme);
+  background: #1a22b7;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;

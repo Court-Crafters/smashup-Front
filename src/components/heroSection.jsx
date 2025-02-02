@@ -205,7 +205,8 @@ const HeroSection = () => {
                       <img
                         className="main-thumb img-custom-anim-right wow fadeInUp"
                         data-wow-delay=".4s"
-                        src="assets/images/intro/introThumb1_1.png"
+                        src="assets/images/phone_14.png"
+                        width={350}
                         alt="thumb"
                       />
                     </div>

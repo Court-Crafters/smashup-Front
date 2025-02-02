@@ -120,7 +120,10 @@ export default function HeaderMobile() {
                 <div className="header-left">
                   <div className="logo">
                     <a href="index.html" className="header-logo">
-                      <img src="assets/images/logo/logo.svg" alt="logo-img" />
+                      <img src="assets/images/logo/p1.png" 
+                      alt="logo-img"
+                      width="90"
+                      height="90" />
                     </a>
                   </div>
                 </div>
@@ -358,7 +361,7 @@ export default function HeaderMobile() {
                         cursor: "pointer",
                       }}
                     >
-                      <i className="fas fa-bars" />
+                      <i className="fas fa-bars" style={{ color: "#1a22b7" }} />
                     </div>
                   </div>
                 </div>

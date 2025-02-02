@@ -11,7 +11,7 @@ export default function FaqSection() {
                   <div className="section-title">
                     <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
                       FAQs{" "}
-                      <img src="assets/images/icon/fireIcon.svg" alt="icon" />
+                      <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
                     </div>
                     <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                       Frequently Ask Questions

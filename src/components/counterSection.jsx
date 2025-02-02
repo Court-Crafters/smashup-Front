@@ -5,7 +5,7 @@ export default function CounterSection() {
         <div className="container">
           <div
             className="counter-wrapper style1 section-padding"
-            data-bg-src="assets/images/shape/counterShape1_1.png"
+            data-bg-src="assets/images/shape/counterShape1_b.png"
           >
             <div className="shape" />
             <div className="container">

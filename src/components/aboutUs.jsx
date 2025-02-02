@@ -28,7 +28,7 @@ export default function AboutUs() {
                   </div>
                   <div className="thumbShape4 d-none d-xxl-block cir36">
                     <img
-                      src="assets/images/shape/aboutThumbShape1_4.png"
+                      src="assets/images/shape/aboutThumbShape1_1b.png"
                       alt="shape"
                     />
                   </div>
