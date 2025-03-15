@@ -1,4 +1,20 @@
+import React from "react";
 const HeroSection = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+    return () => mediaQuery.removeListener(handleMediaQueryChange);
+  }, []);
+
+  const handleMediaQueryChange = (mediaQuery) => {
+    if (mediaQuery.matches) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
   return (
     <>
       <div className="search-wrap">
@@ -40,7 +56,12 @@ const HeroSection = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-xl-7 order-2 order-xl-1">
-                    <div className="intro-content">
+                    <div
+                      className="intro-content"
+                      style={
+                        isMobile ? { marginTop: "0px", paddingTop: "0px" } : {}
+                      }
+                    >
                       <div className="intro-section-title">
                         <div className="intro-subtitle">
                           <span>P4P!</span>Follow Your Passion{" "}
@@ -49,16 +70,19 @@ const HeroSection = () => {
                           className="intro-title wow fadeInUp"
                           data-wow-delay=".2s"
                         >
-                         Padel For Passion is coming soon!
+                          Padel For Passion is coming soon!
                         </h3>
-                        <img
-                        className="main-thumb img-custom-anim-right wow fadeInUp"
-                        data-wow-delay=".4s"
-                        src="assets/images/phone-2.png"
-                        width={400}
-                        alt="thumb"
-                        style={{ display: "block", margin: "0 auto" }}
-                      />
+                        {isMobile && (
+                          <img
+                            className="main-thumb img-custom-anim-right wow fadeInUp"
+                            data-wow-delay=".4s"
+                            src="assets/images/phone-2.png"
+                            width={350}
+                            alt="thumb"
+                            style={{ display: "block", margin: "0 auto" }}
+                          />
+                        )}
+
                         <p
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
@@ -122,7 +146,6 @@ const HeroSection = () => {
                             </defs>
                           </svg>
                         </a>
-                        
                       </div>
                       <div className="fancy-box-wrapper style1">
                         <div
@@ -200,6 +223,15 @@ const HeroSection = () => {
                           alt="thumbShape"
                         />
                       </div>
+                      {!isMobile && (
+                        <img
+                          className="main-thumb img-custom-anim-right wow fadeInUp"
+                          data-wow-delay=".4s"
+                          src="assets/images/phone-2.png"
+                          width={600}
+                          alt="thumb"
+                        />
+                      )}
                       <div className="thumbShape2">
                         <img
                           src="assets/images/shape/introThumbShape1_2.png"
