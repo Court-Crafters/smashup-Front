@@ -43,18 +43,22 @@ const HeroSection = () => {
                     <div className="intro-content">
                       <div className="intro-section-title">
                         <div className="intro-subtitle">
-                          <span>News!</span>Follow Your Passion{" "}
-                          <img
-                            src="assets/images/icon/tennis_ball.svg"
-                            alt="icon"
-                          />
+                          <span>P4P!</span>Follow Your Passion{" "}
                         </div>
-                        <h1
+                        <h3
                           className="intro-title wow fadeInUp"
                           data-wow-delay=".2s"
                         >
-                          We Developed this App for our Tunisian Padel Community
-                        </h1>
+                         Padel For Passion is coming soon!
+                        </h3>
+                        <img
+                        className="main-thumb img-custom-anim-right wow fadeInUp"
+                        data-wow-delay=".4s"
+                        src="assets/images/phone-2.png"
+                        width={400}
+                        alt="thumb"
+                        style={{ display: "block", margin: "0 auto" }}
+                      />
                         <p
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
@@ -202,13 +206,6 @@ const HeroSection = () => {
                           alt="thumbShape"
                         />
                       </div>
-                      <img
-                        className="main-thumb img-custom-anim-right wow fadeInUp"
-                        data-wow-delay=".4s"
-                        src="assets/images/phone_14.png"
-                        width={350}
-                        alt="thumb"
-                      />
                     </div>
                   </div>
                 </div>
