@@ -9,17 +9,17 @@ import "./assets/css/meanmenu.css";
 import "./assets/css/nice-select.css";
 import "./assets/css/main.css";
 import "swiper/css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainLayout />} />
         <Route path="/commingsoon" element={<ComingSoonPage />} />
         <Route path="*" element={<ComingSoonPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
