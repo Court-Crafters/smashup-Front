@@ -484,7 +484,7 @@ input[type=radio]:checked ~ label::before {
 }
 .theme-btn.style2:before {
   transition-duration: 800ms;
-  background: var(--theme);
+  background: var(--title);
 }
 .theme-btn.style2 svg path,
 .theme-btn.style2 svg rect {

@@ -1,4 +1,5 @@
 import MainLayout from "./layout";
+import ComingSoonPage from "./components/comingSoonPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/css/all.min.css";
@@ -15,6 +16,8 @@ function App() {
     <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<MainLayout />} />
+        <Route path="/commingsoon" element={<ComingSoonPage />} />
+        <Route path="*" element={<ComingSoonPage />} />
       </Routes>
     </BrowserRouter>
   );

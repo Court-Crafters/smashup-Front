@@ -23,32 +23,33 @@ const Preloader = () => {
   return (
     <div
       id="preloader"
-      className="fixed top-0 left-0 right-0 bottom-0 bg-white z-50 flex flex-col justify-center items-center"
+      className="preloader"
       style={{
-        position: "absolute", // Ensure the div is positioned absolutely
-        top: "0",
-        left: "0",
-        right: "0",
-        bottom: "0",
+        flexDirection: "column", // Align children vertically
+        justifyContent: "center", // Center children horizontally
+        alignItems: "center", // Center children vertically
       }}
     >
       {/* Image above the GIF */}
-      <img
-        src="assets/images/preloader.png" // Replace with the path to your image
-        alt="Preloader Image"
-        className="mb-4 mt-16" // Margin below it
-        style={{
-          width: "200px", // Adjust the width as needed
-          height: "200px", // Adjust the height as needed
-        }}
-      />
-
+      <div>
+        <img
+          src="assets/images/preloader.png" // Replace with the path to your image
+          alt="Preloader Image"
+          className="mb-4 mt-16" // Margin below it
+          style={{
+            width: "200px", // Adjust the width as needed
+          }}
+        />
+      </div>
       {/* Loading GIF */}
-      <img
-        src="assets/images/loading.gif" // Replace with the path to your GIF
-        alt="Loading GIF"
-        className="animate-spin-slow" // Set animation class
-      />
+      <div>
+        <img
+          src="assets/images/loading.gif" // Replace with the path to your GIF
+          alt="Loading GIF"
+          className="animate-spin-slow" // Set animation class
+        />
+      </div>
+      {/* Progress bar */}
     </div>
   );
 };

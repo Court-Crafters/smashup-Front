@@ -45,197 +45,26 @@ export default function Header() {
                     <nav id="mobile-menu">
                       <ul>
                         <li className="has-dropdown active menu-thumb">
-                          <a href="#">
-                            Home
-                            <i className="fas fa-angle-down" />
-                          </a>
-                          <ul className="submenu has-homemenu">
-                            <li>
-                              <div className="homemenu-items">
-                                <div className="homemenu">
-                                  <div className="homemenu-thumb">
-                                    <img
-                                      src="assets/images/header/home-1.png"
-                                      alt="img"
-                                    />
-                                    <div className="demo-button">
-                                      <a
-                                        className="theme-btn"
-                                        href="index.html"
-                                      >
-                                        Multi Page
-                                      </a>
-                                      <a
-                                        className="theme-btn"
-                                        href="index-one-page.html"
-                                      >
-                                        One Page
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div className="homemenu-content text-center">
-                                    <h4 className="homemenu-title">Home 01</h4>
-                                  </div>
-                                </div>
-                                <div className="homemenu">
-                                  <div className="homemenu-thumb mb-15">
-                                    <img
-                                      src="assets/images/header/home-2.png"
-                                      alt="img"
-                                    />
-                                    <div className="demo-button">
-                                      <a
-                                        className="theme-btn"
-                                        href="index2.html"
-                                      >
-                                        Multi Page
-                                      </a>
-                                      <a
-                                        className="theme-btn"
-                                        href="index-two-page.html"
-                                      >
-                                        One Page
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div className="homemenu-content text-center">
-                                    <h4 className="homemenu-title">Home 02</h4>
-                                  </div>
-                                </div>
-                                <div className="homemenu">
-                                  <div className="homemenu-thumb mb-15">
-                                    <img
-                                      src="assets/images/header/home-3.png"
-                                      alt="img"
-                                    />
-                                    <div className="demo-button">
-                                      <a
-                                        className="theme-btn"
-                                        href="index3.html"
-                                      >
-                                        Multi Page
-                                      </a>
-                                      <a
-                                        className="theme-btn"
-                                        href="index-three-page.html"
-                                      >
-                                        One Page
-                                      </a>
-                                    </div>
-                                  </div>
-                                  <div className="homemenu-content text-center">
-                                    <h4 className="homemenu-title">Home 03</h4>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="has-dropdown active d-xl-none">
-                          <a href="index.html" className="border-none">
-                            Home
-                            <i className="fa-regular fa-plus" />
-                          </a>
-                          <ul className="submenu">
-                            <li>
-                              <a href="index.html">Home 01</a>
-                            </li>
-                            <li>
-                              <a href="index2.html">Home 02</a>
-                            </li>
-                            <li>
-                              <a href="index3.html">Home 03</a>
-                            </li>
-                          </ul>
+                          <a href="#">Home</a>
                         </li>
                         <li>
                           <a href="about.html">About Us</a>
                         </li>
                         <li>
-                          <a href="services.html">
-                            Services
-                            <i className="fas fa-angle-down" />
-                          </a>
-                          <ul className="submenu">
-                            <li>
-                              <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                              <a href="service-details.html">Service Details</a>
-                            </li>
-                          </ul>
+                          <a href="about.html">App</a>
                         </li>
                         <li>
-                          <a href="pricing.html">Pricing</a>
-                        </li>
-                        <li className="has-dropdown">
-                          <a href="#">
-                            Pages
-                            <i className="fas fa-angle-down" />
-                          </a>
-                          <ul className="submenu">
-                            <li className="has-dropdown">
-                              <a href="project1.html">
-                                Project
-                                <i className="fas fa-angle-down" />
-                              </a>
-                              <ul className="submenu">
-                                <li>
-                                  <a href="project1.html">Project 01</a>
-                                </li>
-                                <li>
-                                  <a href="project2.html">Project 02</a>
-                                </li>
-                                <li>
-                                  <a href="project-details.html">
-                                    Project Details
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="has-dropdown">
-                              <a href="team.html">
-                                Team
-                                <i className="fas fa-angle-down" />
-                              </a>
-                              <ul className="submenu">
-                                <li>
-                                  <a href="team.html">Team</a>
-                                </li>
-                                <li>
-                                  <a href="team-details.html">Team Details</a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="faq.html">Faq&apos;s</a>
-                            </li>
-                          </ul>
+                          <a href="about.html">Why Us</a>
                         </li>
                         <li>
-                          <a href="blog.html">
-                            Blogs
-                            <i className="fas fa-angle-down" />
-                          </a>
-                          <ul className="submenu">
-                            <li>
-                              <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-standard.html">Blog Standard</a>
-                            </li>
-                            <li>
-                              <a href="blog-left-sidebar.html">
-                                Blog Left Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-details.html">Blog Details</a>
-                            </li>
-                          </ul>
+                          <a href="about.html">FAQ's</a>
                         </li>
                         <li>
-                          <a href="contact.html">Contact Us</a>
+                          <a href="about.html">Our Form</a>
+                        </li>
+
+                        <li>
+                          <a href="about.html">Contact Us</a>
                         </li>
                       </ul>
                     </nav>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './comingSoonPage.css'; // Make sure to create a corresponding CSS file for styling
+import './comingSoonPage.css';
 
 const ComingSoonPage = () => {
   return (
