@@ -2566,11 +2566,11 @@ input[type=radio]:checked ~ label::before {
 
 .back-to-top {
   border-radius: 12px;
-  background-color: var(--theme);
+  background-color: #1a22b7;
   width: 50px;
   height: 50px;
   line-height: 50px;
-  color: var(--white);
+  color: #DFF42E;
   font-size: 18px;
   position: fixed;
   display: inline-block;
@@ -2583,7 +2583,8 @@ input[type=radio]:checked ~ label::before {
   transform: translateY(20px);
 }
 .back-to-top:hover {
-  background-color: var(--title);
+  background-color: #DFF42E;
+  color: black;
 }
 .back-to-top.show {
   opacity: 1;
@@ -2646,7 +2647,7 @@ input[type=radio]:checked ~ label::before {
 }
 @media (max-width: 1199px) {
   .section-title .title {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 .section-title .section-desc {
@@ -3119,6 +3120,13 @@ input[type=radio]:checked ~ label::before {
   letter-spacing: -0.36px;
   margin-bottom: 20px;
 }
+
+@media (max-width:1199px) {
+  .checklist.style1 li {
+    font-size: 16px;
+  }
+}
+
 .checklist.style1 li img {
   margin-right: 10px;
 }
@@ -4431,7 +4439,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 1899px) {
   .header-main {
-    padding: 20px 10px;
+    padding: 0 15px;
   }
 }
 .header-main .main-menu ul {
@@ -5825,7 +5833,7 @@ input.main-search-input::placeholder {
 }
 @media (max-width: 767px) {
   .intro-wrapper.style1 .intro-content {
-    padding: 80px 0;
+    padding: 0;
   }
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-subtitle {
@@ -6276,9 +6284,9 @@ input.main-search-input::placeholder {
   right: 0;
   z-index: 1;
   width: 465px;
-  height: 350px;
-  border-radius: 0px 0px 50px 50px;
-  background: #E8E5FD;
+  height: 450px;
+  border-radius: 50px;
+  background: #ffffff;
 }
 @media (max-width: 767px) {
   .about-wrapper.style1 .about-thumb .bg {
@@ -6679,7 +6687,7 @@ input.main-search-input::placeholder {
   z-index: 1;
 }
 .advantage-wrapper.style1 .advantage-thumb .thumb2 {
-  position: absolute;
+  position: relative;
   z-index: 2;
   right: -30px;
   bottom: 0;
@@ -6687,8 +6695,15 @@ input.main-search-input::placeholder {
 .advantage-wrapper.style1 .advantage-thumb .shape1 {
   position: absolute;
   bottom: 0;
-  right: -30px;
+  top: 100px;
 }
+@media (max-width: 1199px) {
+  .advantage-wrapper.style1 .advantage-thumb .shape1 {
+    right: -30px;
+    top: 50px;
+  }
+}
+
 .advantage-wrapper.style1 .advantage-thumb .shape1 img {
   max-width: 100%;
 }

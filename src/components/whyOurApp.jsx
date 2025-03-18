@@ -66,14 +66,9 @@ export default function WhyOurApp() {
                     className="main-thumb wow bounceInUp"
                     data-wow-delay=".6s"
                   >
-                    <img src="assets/images/wcu/wcuThumb1_1.png" alt="thumb" />
+                    <img src="assets/images/court.png" alt="thumb" />
                   </div>
-                  <div className="shape">
-                    <img
-                      src="assets/images/shape/wcuThumbShape1_1.png"
-                      alt="shape"
-                    />
-                  </div>
+
                 </div>
               </div>
               <div className="col-xl-4 d-flex justify-content-center justify-content-xl-end">

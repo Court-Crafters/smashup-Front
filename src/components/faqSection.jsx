@@ -140,17 +140,14 @@ export default function FaqSection() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6">
+              <div className="col-xl-6" style={{marginTop:200}}>
                 <div className="faq-thumb">
                   <img
                     className="main-thumb  wow fadeInUp"
                     data-wow-delay=".2s"
-                    src="assets/images/faq/faqThumb1_2.png"
+                    src="assets/images/faq.png"
                     alt="thumb"
                   />
-                  <div className="absolute-thumb float-bob-x">
-                    <img src="assets/images/faq/faqThumb1_1.png" alt="thumb" />
-                  </div>
                 </div>
               </div>
             </div>
@@ -159,4 +156,4 @@ export default function FaqSection() {
       </section>
     </>
   );
-}
+} 

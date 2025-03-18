@@ -1,62 +1,62 @@
+import React from "react";
 export default function AboutUs() {
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+    return () => mediaQuery.removeListener(handleMediaQueryChange);
+  }, []);
+  const handleMediaQueryChange = (mediaQuery) => {
+    if (mediaQuery.matches) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
   return (
     <section className="about-section fix">
       <div className="about-container-wrapper style1">
         <div className="container">
           <div className="about-wrapper style1">
-            <div className="row gy-5 gx-60">
+            <div className="row gx-60">
               <div className="col-xl-6">
-                <div className="about-thumb">
-                  <div className="bg" />
-                  <div className="thumbShape1 d-none d-xxl-block cir36">
-                    <img
-                      src="assets/images/shape/aboutThumbShape1_1.png"
-                      alt="shape"
-                    />
+                {!isMobile && (
+                  <div className="about-thumb">
+                    <div className="bg" />
+
+                    <div className="main-thumb">
+                      <img src="assets/images/illustration.png" alt="thumb" />
+                    </div>
+                    <div className="absolute-thumb float-bob-x">
+                      <img
+                        src="assets/images/about/aboutThumb1_2.png"
+                        alt="thumb"
+                      />
+                    </div>
                   </div>
-                  <div className="thumbShape2 d-none d-xxl-block cir36">
-                    <img
-                      src="assets/images/shape/aboutThumbShape1_2.png"
-                      alt="shape"
-                    />
-                  </div>
-                  <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y">
-                    <img
-                      src="assets/images/shape/aboutThumbShape1_3.png"
-                      alt="shape"
-                    />
-                  </div>
-                  <div className="thumbShape4 d-none d-xxl-block cir36">
-                    <img
-                      src="assets/images/shape/aboutThumbShape1_1b.png"
-                      alt="shape"
-                    />
-                  </div>
-                  <div className="main-thumb">
-                    <img
-                      src="assets/images/about/aboutThumb1_1.png"
-                      alt="thumb"
-                    />
-                  </div>
-                  <div className="absolute-thumb float-bob-x">
-                    <img
-                      src="assets/images/about/aboutThumb1_2.png"
-                      alt="thumb"
-                    />
-                  </div>
-                </div>
+                )}
               </div>
               <div className="col-xl-6">
-                <div className="about-content">
+                <div
+                  className="about-content"
+                  style={
+                    isMobile ? { marginTop: "0px", paddingTop: "0px" } : {}
+                  }
+                >
                   <div className="section-title">
                     <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
                       About Our App{" "}
-                      <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
+                      <img
+                        src="assets/images/icon/tennis_ball.svg"
+                        alt="icon"
+                      />
                     </div>
                     <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                       Padel for Passion is a one-stop app for all this sport
                       enthusiasts
                     </h2>
+
                     <p
                       className="section-desc wow fadeInUp"
                       data-wow-delay=".6s"
@@ -64,69 +64,49 @@ export default function AboutUs() {
                       Join the growing community passionate about padel and take
                       your game to the next level with P4P:
                     </p>
+                    <div className="main-thumb">
+                      {isMobile && (
+                        <img
+                          src="assets/images/illustration.png"
+                          alt="thumb"
+                          width={400}
+                        />
+                      )}
+                    </div>
                   </div>
                   <ul
                     className="checklist style1 wow fadeInUp"
                     data-wow-delay=".2s"
                   >
-                    <li>
-                      <img
-                        src="assets/images/icon/checked.png"
-                        alt="icon"
+                    {[
+                      "With our Matchmaking find your ideal match based on skill level and availability.",
+                      "Coaches can easily create and manage their sessions.",
+                      'Compete & organize your events effortlessly "Leagues or Tournaments".',
+                      "With our chat connect seamlessly with your buddies.",
+                      "With our shop you can sell or buy padel gear and equipment.",
+                    ].map((text, index) => (
+                      <li
+                        key={index}
                         style={{
-                          width: '30px',
-                          height: '30px',
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: "10px",
                         }}
-                      />{" "}
-                      With our Matchmaking find your ideal match based on skill
-                      level and availability.
-                    </li>
-                    <li>
-                    <img
-                        src="assets/images/icon/checked.png"
-                        alt="icon"
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                        }}
-                      />{" "}
-                      Coaches can easily create and manage their sessions.{" "}
-                    </li>
-                    <li>
-                    <img
-                        src="assets/images/icon/checked.png"
-                        alt="icon"
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                        }}
-                      />{" "}
-                      Compete & organize your events effortlessly "Leagues or
-                      Tounements".{" "}
-                    </li>
-                    <li>
-                    <img
-                        src="assets/images/icon/checked.png"
-                        alt="icon"
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                        }}
-                      />{" "}
-                      With our chat connect seamlessly with your bodies.{" "}
-                    </li>
-                    <li>
-                    <img
-                        src="assets/images/icon/checked.png"
-                        alt="icon"
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                        }}
-                      />{" "}
-                      With our shop you can sell or buy padel gear and equipments.{" "}
-                    </li>
+                      >
+                        <img
+                          src="assets/images/icon/checked.png"
+                          alt="icon"
+                          style={{
+                            width: "30px",
+                            height: "30px",
+                            flexShrink: 0,
+                          }}
+                        />
+                        <span>{text}</span>
+                      </li>
+                    ))}
                   </ul>
+
                   <a
                     className="theme-btn wow fadeInUp"
                     data-wow-delay=".2s"
