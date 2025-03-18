@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const [isMobile, setIsMobile] = React.useState(false);
+  const Navigate = useNavigate();
+
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
     mediaQuery.addListener(handleMediaQueryChange);
@@ -99,7 +102,10 @@ const HeroSection = () => {
                         className="btn-wrapper style1 wow fadeInUp"
                         data-wow-delay=".6s"
                       >
-                        <a className="theme-btn" href="contact.html">
+                        <a
+                          className="theme-btn"
+                          onClick={() => Navigate("/commingsoon")}
+                        >
                           Get Started Now
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +130,9 @@ const HeroSection = () => {
                         <a
                           className="theme-btn style2 wow fadeInUp"
                           data-wow-delay=".2s"
-                          href="https://tally.so/r/mDA9y5"
+                          onClick={() =>
+                            window.open("https://tally.so/r/mDA9y5", "_blank")
+                          }
                         >
                           Check our form
                           <svg

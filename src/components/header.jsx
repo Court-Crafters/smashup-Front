@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 export default function Header() {
   // headerRef to be sticky
   const headerRef = useRef(null); // Reference for the header element
+  const Navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -123,7 +125,7 @@ export default function Header() {
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button ms-4">
-                  <a href="contact.html" className="theme-btn">
+                  <a onClick={()=> Navigate("/commingsoon")} className="theme-btn">
                     <span>
                       Get Started
                       <i className="fa-solid fa-arrow-right-long" />

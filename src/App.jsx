@@ -1,5 +1,5 @@
 import MainLayout from "./layout";
-import ComingSoonPage from "./components/comingSoonPage";
+import ComingSoonPage from "./components/ComingSoonPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/css/all.min.css";
@@ -15,8 +15,10 @@ function App() {
   return (
     <HashRouter>
       <Routes>
+        {/* Base URL renders MainLayout */}
         <Route path="/" element={<MainLayout />} />
-        <Route path="/commingsoon" element={<ComingSoonPage />} />
+
+        {/* Any other path redirects to ComingSoonPage */}
         <Route path="*" element={<ComingSoonPage />} />
       </Routes>
     </HashRouter>
