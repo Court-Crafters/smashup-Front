@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://padel4passion.com/sitemap.xml
