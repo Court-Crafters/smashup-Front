@@ -158,7 +158,8 @@ const ComingSoonPage = () => {
                         sx={{
                           color: "white",
                           textShadow: "4px 4px 10px rgba(0, 0, 0, 0.54)",
-                          fontSize: "3rem", // Ajuste la taille manuellement si nécessaire
+                          fontSize: "4.5rem", // Ajuste la taille manuellement si nécessaire
+                          fontFamily: "Birthstone",
                           textAlign: "center",
                         }}
                         className="wow fadeInUp"
