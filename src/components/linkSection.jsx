@@ -35,7 +35,7 @@ export default function LinkSection() {
                         className="section-desc text-white mxw-651 wow fadeInUp"
                         data-wow-delay=".6s"
                       >
-                        Help us shape the future of padel in Tunisia! 🎾 We're
+                        Help us shape the future of padel in Tunisia! 🎾 We&apos;re
                         developing an app to enhance your padel experience, and
                         your input is essential. Take a minute to share your
                         favorite courts, playing habits, and preferences by
