@@ -1,6 +1,6 @@
 export default function WhyOurApp() {
   return (
-    <section className="wcu-section section-padding fix">
+    <section className="wcu-section section-padding fix" id="why-us">
       <div className="wcu-container-wrapper style1">
         <div className="container">
           <div

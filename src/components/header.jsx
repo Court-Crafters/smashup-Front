@@ -20,7 +20,15 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 150, // Adjust for header height
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <header className="header-section-1" ref={headerRef}>
       <div id="header-sticky" className="header-1" ref={headerRef}>
@@ -45,26 +53,68 @@ export default function Header() {
                     <nav id="mobile-menu">
                       <ul>
                         <li className="has-dropdown active menu-thumb">
-                          <a href="#">Home</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("home");
+                            }}
+                          >
+                            Home
+                          </a>
                         </li>
                         <li>
-                          <a href="about.html">About Us</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("about");
+                            }}
+                          >
+                            About Us
+                          </a>
                         </li>
                         <li>
-                          <a href="about.html">App</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("app");
+                            }}
+                          >
+                            App
+                          </a>
                         </li>
                         <li>
-                          <a href="about.html">Why Us</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("why-us");
+                            }}
+                          >
+                            Why Us
+                          </a>
                         </li>
                         <li>
-                          <a href="about.html">FAQ's</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("faq");
+                            }}
+                          >
+                            FAQ&apos;s
+                          </a>
                         </li>
                         <li>
-                          <a href="about.html">Our Form</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("form");
+                            }}
+                          >
+                            Our Form
+                          </a>
                         </li>
 
                         <li>
-                          <a href="about.html">Contact Us</a>
+                          <a
+                            onClick={() => {
+                              scrollToSection("contact");
+                            }}
+                          >
+                            Contact Us
+                          </a>
                         </li>
                       </ul>
                     </nav>
@@ -72,9 +122,6 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
-                <a href="#0" className="search-trigger search-icon">
-                  <i className="fal fa-search" />
-                </a>
                 <div className="header-button ms-4">
                   <a href="contact.html" className="theme-btn">
                     <span>

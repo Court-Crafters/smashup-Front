@@ -34,7 +34,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* Intro Section S T A R T */}
-      <section className="intro-section">
+      <section className="intro-section" id="home">
         <div className="intro-container-wrapper style1">
           <div className="container">
             <div className="intro-wrapper style1 fix">
@@ -87,11 +87,12 @@ const HeroSection = () => {
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
                         >
-                          "Padel-4-Passion" unites players and coaches, making
-                          padel more exciting than ever. Find your perfect
-                          match, join leagues, book sessions, and connect with
-                          the community—all in one app. Whether you’re here to
-                          play, compete, or shop, your padel journey starts now!
+                          &quot;Padel-4-Passion&quot; unites players and
+                          coaches, making padel more exciting than ever. Find
+                          your perfect match, join leagues, book sessions, and
+                          connect with the community—all in one app. Whether
+                          you’re here to play, compete, or shop, your padel
+                          journey starts now!
                         </p>
                       </div>
                       <div

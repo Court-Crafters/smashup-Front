@@ -1,6 +1,6 @@
 export default function FooterSection() {
   return (
-    <footer className="footer-section position-relative">
+    <footer className="footer-section position-relative" id="contact">
       <div className="footer-widgets-wrapper style1 fix">
         <div className="shape1">
           <img src="assets/images/shape/footerShape1_1.png" alt="shape" />

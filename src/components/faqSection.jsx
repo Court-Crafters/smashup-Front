@@ -18,7 +18,7 @@ export default function FaqSection() {
   return (
     <>
       {/* Faq Section S T A R T */}
-      <section className="faq-section section-padding fix">
+      <section className="faq-section section-padding fix" id="faq">
         <div className="container">
           <div className="faq-wrapper style1">
             <div className="row gy-5 gy-xl-0 gx-60 d-flex align-items-start">
@@ -95,7 +95,7 @@ export default function FaqSection() {
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
-                            "Padel for Passion" is for players of all levels and
+                            &quot;Padel for Passion&quot; is for players of all levels and
                             coaches seeking to manage sessions.
                           </div>
                         </div>

@@ -1,6 +1,6 @@
 export default function LinkSection() {
   return (
-    <section className="cta-section">
+    <section className="cta-section" id="form">
       <div className="cta-container-wrapper style1">
         <div className="container">
           <div className="cta-wrapper style1  section-padding fix">

@@ -15,7 +15,7 @@ export default function AboutUs() {
     }
   };
   return (
-    <section className="about-section fix">
+    <section className="about-section fix" id="about">
       <div className="about-container-wrapper style1">
         <div className="container">
           <div className="about-wrapper style1">
