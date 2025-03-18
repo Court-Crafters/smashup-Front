@@ -1,20 +1,20 @@
 import React from "react";
 export default function FaqSection() {
-    const [isMobile, setIsMobile] = React.useState(false);
-    React.useEffect(() => {
-      const mediaQuery = window.matchMedia("(max-width: 768px)");
-      mediaQuery.addListener(handleMediaQueryChange);
-      handleMediaQueryChange(mediaQuery);
-      return () => mediaQuery.removeListener(handleMediaQueryChange);
-    }, []);
-  
-    const handleMediaQueryChange = (mediaQuery) => {
-      if (mediaQuery.matches) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+    return () => mediaQuery.removeListener(handleMediaQueryChange);
+  }, []);
+
+  const handleMediaQueryChange = (mediaQuery) => {
+    if (mediaQuery.matches) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
   return (
     <>
       {/* Faq Section S T A R T */}
@@ -27,7 +27,10 @@ export default function FaqSection() {
                   <div className="section-title">
                     <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
                       FAQs{" "}
-                      <img src="assets/images/icon/tennis_ball.svg" alt="icon" />
+                      <img
+                        src="assets/images/icon/tennis_ball.svg"
+                        alt="icon"
+                      />
                     </div>
                     <h2 className="title wow fadeInUp" data-wow-delay=".4s">
                       Frequently Ask Questions
@@ -53,7 +56,7 @@ export default function FaqSection() {
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#faq1"
-                            aria-expanded="true"
+                            aria-expanded="false"
                             aria-controls="faq1"
                           >
                             Is Padel4Passion available worldwide?
@@ -79,15 +82,15 @@ export default function FaqSection() {
                             className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
-                            data-bs-target="#faq1"
-                            aria-expanded="true"
-                            aria-controls="faq1"
+                            data-bs-target="#faq2"
+                            aria-expanded="false"
+                            aria-controls="faq2"
                           >
                             Who can use the application?
                           </button>
                         </h5>
                         <div
-                          id="faq1"
+                          id="faq2"
                           className="accordion-collapse collapse"
                           data-bs-parent="#accordion"
                         >
@@ -106,15 +109,15 @@ export default function FaqSection() {
                             className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
-                            data-bs-target="#faq2"
+                            data-bs-target="#faq3"
                             aria-expanded="false"
-                            aria-controls="faq2"
+                            aria-controls="faq3"
                           >
                             Can I organize tournaments?
                           </button>
                         </h5>
                         <div
-                          id="faq2"
+                          id="faq3"
                           className="accordion-collapse collapse"
                           data-bs-parent="#accordion"
                         >
@@ -130,19 +133,19 @@ export default function FaqSection() {
                       >
                         <h5 className="accordion-header">
                           <button
-                            className="accordion-button"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
-                            data-bs-target="#faq3"
+                            data-bs-target="#faq4"
                             aria-expanded="false"
-                            aria-controls="faq3"
+                            aria-controls="faq4"
                           >
                             Is there a way to track my progress?
                           </button>
                         </h5>
                         <div
-                          id="faq3"
-                          className="accordion-collapse show"
+                          id="faq4"
+                          className="accordion-collapse collapse show"
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
@@ -156,20 +159,22 @@ export default function FaqSection() {
                   </div>
                 </div>
               </div>
-              {!isMobile && (    <div className="col-xl-6" style={{marginTop:200}}>
-                <div className="faq-thumb">
-                  <img
-                    className="main-thumb  wow fadeInUp"
-                    data-wow-delay=".2s"
-                    src="assets/images/faq.png"
-                    alt="thumb"
-                  />
+              {!isMobile && (
+                <div className="col-xl-6" style={{ marginTop: 200 }}>
+                  <div className="faq-thumb">
+                    <img
+                      className="main-thumb  wow fadeInUp"
+                      data-wow-delay=".2s"
+                      src="assets/images/faq.png"
+                      alt="thumb"
+                    />
+                  </div>
                 </div>
-              </div>)}
+              )}
             </div>
           </div>
         </div>
       </section>
     </>
   );
-} 
+}

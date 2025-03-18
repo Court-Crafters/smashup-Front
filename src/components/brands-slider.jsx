@@ -13,7 +13,7 @@ const BrandSliderSection = () => {
     "assets/images/logo/brandLogo1_3.png",
     "assets/images/logo/brandLogo1_4.png",
     "assets/images/logo/brandLogo1_5.png",
-    "assets/images/logo/brandLogo1_3.png",
+    "assets/images/logo/brandLogo1_2.png",
   ];
 
   return (
@@ -21,8 +21,8 @@ const BrandSliderSection = () => {
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
-            <h2 className="single-section-title">
-              Millions of clients trust us.
+            <h2 className="single-section-title pb-4">
+            Join The Network Of Excellence.
             </h2>
             <Swiper
               modules={[Autoplay, Pagination, Navigation]}
@@ -56,7 +56,7 @@ const BrandSliderSection = () => {
                 <SwiperSlide
                   key={index}
                   style={{
-                    width: "400px", // Fixed width per logo
+                    width: "300px", // Fixed width per logo
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
@@ -67,7 +67,7 @@ const BrandSliderSection = () => {
                       src={logo}
                       alt={`Partner ${index + 1}`}
                       style={{
-                        width: "100%",
+                        width: "60%",
                         height: "auto",
                         objectFit: "contain",
                       }}

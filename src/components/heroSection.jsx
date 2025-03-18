@@ -123,9 +123,9 @@ const HeroSection = () => {
                         <a
                           className="theme-btn style2 wow fadeInUp"
                           data-wow-delay=".2s"
-                          href="about.html"
+                          href="https://tally.so/r/mDA9y5"
                         >
-                          Learn More
+                          Check our form
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width={16}
@@ -136,7 +136,7 @@ const HeroSection = () => {
                             <g clipPath="url(#clip0_11_27)">
                               <path
                                 d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z"
-                                fill="#282C32"
+                                fill="#d2f429"
                               />
                             </g>
                             <defs>

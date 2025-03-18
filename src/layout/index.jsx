@@ -66,7 +66,6 @@ const App = () => {
       <LinkSection />
       {/* <BlogSection />*/}
       <FooterSection />
-    
     </Suspense>
   );
 };

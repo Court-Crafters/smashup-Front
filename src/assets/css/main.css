@@ -2618,8 +2618,8 @@ input[type=radio]:checked ~ label::before {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  background: rgba(75, 92, 216, 0.2);
-  color: #1a22b7;
+  background: #0098c3;
+  color: white;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -9849,6 +9849,7 @@ input.main-search-input::placeholder {
 }
 .contact-info-box.style1 .contact-content .icon svg path {
   fill: var(--theme);
+
 }
 .contact-info-box.style1 .contact-content .title {
   margin-bottom: 10px;

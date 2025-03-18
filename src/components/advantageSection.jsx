@@ -54,7 +54,7 @@ export default function AdvantageSection() {
                             </div>
                             <div className="shape1">
                               <img
-                                src="assets/images/shape/advanceThumbShape1_1.png"
+                                src="assets/images/shape/advanceThumbShapeblue3.png"
                                 alt="shape"
                               />
                             </div>
@@ -167,7 +167,7 @@ export default function AdvantageSection() {
                       </div>
                       <div className="shape1">
                         <img
-                          src="assets/images/shape/advanceThumbShape1_1.png"
+                          src="assets/images/shape/advanceThumbShapeblue2.png"
                           alt="shape"
                         />
                       </div>

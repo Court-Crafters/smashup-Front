@@ -53,7 +53,6 @@ export default function CounterSection() {
                   >
                     <div className="counter">
                       <span className="counter-number">60%</span>{" "}
-                      <span className="plus">+</span>
                     </div>
                     <p className="text">
                     Growth in Padel Participation
