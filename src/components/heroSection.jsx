@@ -147,7 +147,6 @@ const HeroSection = () => {
                           </svg>
                         </a>
                       </div>
-
                     </div>
                   </div>
                   <div className="col-xl-5 order-1 order-xl-2">

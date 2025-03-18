@@ -1,4 +1,20 @@
+import React from "react";
 export default function FaqSection() {
+    const [isMobile, setIsMobile] = React.useState(false);
+    React.useEffect(() => {
+      const mediaQuery = window.matchMedia("(max-width: 768px)");
+      mediaQuery.addListener(handleMediaQueryChange);
+      handleMediaQueryChange(mediaQuery);
+      return () => mediaQuery.removeListener(handleMediaQueryChange);
+    }, []);
+  
+    const handleMediaQueryChange = (mediaQuery) => {
+      if (mediaQuery.matches) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
   return (
     <>
       {/* Faq Section S T A R T */}
@@ -140,7 +156,7 @@ export default function FaqSection() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-6" style={{marginTop:200}}>
+              {!isMobile && (    <div className="col-xl-6" style={{marginTop:200}}>
                 <div className="faq-thumb">
                   <img
                     className="main-thumb  wow fadeInUp"
@@ -149,7 +165,7 @@ export default function FaqSection() {
                     alt="thumb"
                   />
                 </div>
-              </div>
+              </div>)}
             </div>
           </div>
         </div>
