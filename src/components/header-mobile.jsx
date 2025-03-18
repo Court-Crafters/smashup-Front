@@ -6,8 +6,6 @@ export default function HeaderMobile() {
     <>
       <div className="mouse-cursor cursor-outer" id="cursor-outer" />
       <div className="mouse-cursor cursor-inner" id="cursor-inner" />
-      {/* Offcanvas Area Start */}
-
       <div className="fix-area">
         <div className={`offcanvas__info` + (toggleOpen ? " info-open" : "")}>
           <div className="offcanvas__wrapper">
@@ -21,7 +19,7 @@ export default function HeaderMobile() {
                 <div className="offcanvas__close">
                   <button
                     onClick={() => {
-                      setToggleOpen(!toggleOpen);
+                      console.log("clicked");
                     }}
                   >
                     <i className="fas fa-times" />
@@ -120,10 +118,12 @@ export default function HeaderMobile() {
                 <div className="header-left">
                   <div className="logo">
                     <a href="index.html" className="header-logo">
-                      <img src="assets/images/logo/p1.png" 
-                      alt="logo-img"
-                      width="90"
-                      height="90" />
+                      <img
+                        src="assets/images/logo/p1.png"
+                        alt="logo-img"
+                        width="90"
+                        height="90"
+                      />
                     </a>
                   </div>
                 </div>
@@ -354,9 +354,6 @@ export default function HeaderMobile() {
                   <div className="header__hamburger d-block d-xl-none my-auto">
                     <div
                       className="sidebar__toggle"
-                      onClick={() => {
-                        setToggleOpen(!toggleOpen);
-                      }}
                       style={{
                         cursor: "pointer",
                       }}

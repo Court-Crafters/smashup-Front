@@ -15,7 +15,7 @@ export default function AdvantageSection() {
     }
   };
   return (
-    <section className="advantage-section fix">
+    <section className="advantage-section fix" id="app">
       <div className="advantage-container-wrapper style1">
         <div className="container">
           <div className="advantage-wrapper style1 section-padding">

@@ -7,15 +7,13 @@ const MouseCursor = React.lazy(() => import("../components/mouseEffect"));
 const BrandsSlider = React.lazy(() => import("../components/brands-slider"));
 const AboutUs = React.lazy(() => import("../components/aboutUs"));
 const WorkProcess = React.lazy(() => import("../components/workProcess"));
-const AdvantageSection = React.lazy(() => import("../components/advantageSection"));
+const AdvantageSection = React.lazy(() =>
+  import("../components/advantageSection")
+);
 const WhyOurApp = React.lazy(() => import("../components/whyOurApp"));
 const CounterSection = React.lazy(() => import("../components/counterSection"));
 const FaqSection = React.lazy(() => import("../components/faqSection"));
-const TestimonialSection = React.lazy(() => import("../components/testimonialSection"));
-const FeatureSection = React.lazy(() => import("../components/featureSection")); 
-const PricingSection = React.lazy(() => import("../components/pricingSection"));
 const LinkSection = React.lazy(() => import("../components/linkSection"));
-const BlogSection = React.lazy(() => import("../components/blogSection"));
 const FooterSection = React.lazy(() => import("../components/footerSection"));
 const App = () => {
   // Media query to detect mobile devices
@@ -37,7 +35,7 @@ const App = () => {
 
   return (
     <Suspense fallback={<Preloader />}>
-      <MouseCursor />
+      {!isMobile ? <MouseCursor /> : null}
       <button
         id="back-top"
         className="back-to-top"
@@ -52,18 +50,18 @@ const App = () => {
         <i className="fa-solid fa-chevron-up" />
       </button>
       {isMobile ? <CanvasSlider /> : <Header />}
-      <HeroSection />
+      <HeroSection id="hero" />
       <BrandsSlider />
-      <AboutUs />
-      <WorkProcess />
-      <AdvantageSection />
-      <WhyOurApp />
+      <AboutUs id="about" />
+      <WorkProcess id="work-process" />
+      <AdvantageSection id="advantage" />
+      <WhyOurApp id="why-us" />
       <CounterSection />
-      <FaqSection />
+      <FaqSection id="faq" />
       {/*<TestimonialSection />
       <FeatureSection />
       <PricingSection />*/}
-      <LinkSection />
+      <LinkSection id="our-form" />
       {/* <BlogSection />*/}
       <FooterSection />
     </Suspense>
