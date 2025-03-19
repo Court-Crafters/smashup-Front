@@ -157,8 +157,8 @@ const ComingSoonPage = () => {
                         gutterBottom
                         sx={{
                           color: "white",
-                          textShadow: "4px 4px 10px rgba(0, 0, 0, 0.54)",
-                          fontSize: "4.5rem", // Ajuste la taille manuellement si nécessaire
+                         // textShadow: "4px 4px 10px rgba(0, 0, 0, 0.54)",
+                          fontSize: "4.3rem", // Ajuste la taille manuellement si nécessaire
                           fontFamily: "Birthstone",
                           textAlign: "center",
                         }}
