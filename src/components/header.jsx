@@ -41,7 +41,7 @@ export default function Header() {
                 <div className="logo">
                   <a href="index.html" className="header-logo">
                     <img
-                      src="assets/images/logo/p1.png"
+                      src="assets/images/logo/logo1.png"
                       alt="logo-img"
                       width="120"
                       height="120"
@@ -50,7 +50,7 @@ export default function Header() {
                 </div>
               </div>
               <div className="header-middle">
-                <div className="mean__menu-wrapper">
+                <div className="mean__menu-wrapper text-blue">
                   <div className="main-menu">
                     <nav id="mobile-menu">
                       <ul>
@@ -125,7 +125,10 @@ export default function Header() {
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button ms-4">
-                  <a onClick={()=> Navigate("/commingsoon")} className="theme-btn">
+                  <a
+                    onClick={() => Navigate("/commingsoon")}
+                    className="theme-btn"
+                  >
                     <span>
                       Get Started
                       <i className="fa-solid fa-arrow-right-long" />

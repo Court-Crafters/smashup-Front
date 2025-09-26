@@ -43,12 +43,13 @@ export default function LinkSection() {
                         the ultimate padel platform!
                       </p>
                       <button
+                      style={{ backgroundColor:"white"}}
                         rel="noopener noreferrer"
                         onClick={() => {
                           window.open("https://tally.so/r/mDA9y5", "_blank");
                         }}
-                        className="btn btn-primary mt-4 wow fadeInUp bg-blue-600 text-white transition-colors duration-300 
-                        hover:bg-yellow-400 hover:text-black active:bg-yellow-400 active:text-black"
+                        className="btn btn-primary mt-4 wow fadeInUp bg-blue-600 text-blue transition-colors duration-300 
+                        "
                         data-wow-delay=".8s"
                       >
                         Fill Out the Form 🚀

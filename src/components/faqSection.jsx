@@ -25,19 +25,48 @@ export default function FaqSection() {
               <div className="col-xl-6">
                 <div className="faq-content style1">
                   <div className="section-title">
-                    <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
+                    <div
+                      className="subtitle wow fadeInUp"
+                      data-wow-delay=".2s"
+                      style={{
+                        borderRadius: "4px",
+                        display: "inline-flex",
+                        alignItems: "center",
+                        padding: "2px 6px",
+                        color: "white",
+                        backgroundColor: "#1a22b7",
+                      }}
+                    >
                       FAQs{" "}
-                      <img
-                        src="assets/images/icon/tennis_ball.svg"
-                        alt="icon"
-                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        style={{
+                          width: "16px",
+                          height: "16px",
+                          marginLeft: "6px",
+                        }}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 7l5 5m0 0l-5 5m5-5H6"
+                        />
+                      </svg>
                     </div>
-                    <h2 className="title wow fadeInUp" data-wow-delay=".4s">
+                    <h2  style={{ color: "#1a22b7" }}
+                      className="title wow fadeInUp text-blue"
+                      data-wow-delay=".4s"
+                    >
                       Frequently Ask Questions
                     </h2>
                     <p
                       className="section-desc wow fadeInUp"
                       data-wow-delay=".6s"
+                       style={{ color: "#1a22b7" }}
                     >
                       Here are some frequently asked questions to help you get
                       started with Padel4Passion. If you need further
@@ -50,9 +79,10 @@ export default function FaqSection() {
                         className="accordion-item mb-3 wow fadeInUp"
                         data-wow-delay=".3s"
                       >
-                        <h5 className="accordion-header">
+                        <h5 className="accordion-header" >
                           <button
                             className="accordion-button collapsed"
+                            style={{ color: "#1a22b7" }}
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target="#faq1"
@@ -79,6 +109,7 @@ export default function FaqSection() {
                       >
                         <h5 className="accordion-header">
                           <button
+                          style={{ color: "#1a22b7" }}
                             className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
@@ -95,8 +126,8 @@ export default function FaqSection() {
                           data-bs-parent="#accordion"
                         >
                           <div className="accordion-body">
-                            &quot;Padel for Passion&quot; is for players of all levels and
-                            coaches seeking to manage sessions.
+                            &quot;Padel for Passion&quot; is for players of all
+                            levels and coaches seeking to manage sessions.
                           </div>
                         </div>
                       </div>
@@ -106,6 +137,7 @@ export default function FaqSection() {
                       >
                         <h5 className="accordion-header">
                           <button
+                          style={{ color: "#1a22b7" }}
                             className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
@@ -133,6 +165,7 @@ export default function FaqSection() {
                       >
                         <h5 className="accordion-header">
                           <button
+                          style={{ color: "#1a22b7" }}
                             className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"

@@ -119,7 +119,7 @@ export default function HeaderMobile() {
                   <div className="logo">
                     <a href="index.html" className="header-logo">
                       <img
-                        src="assets/images/logo/p1.png"
+                        src="assets/images/logo/logo1.png"
                         alt="logo-img"
                         width="90"
                         height="90"

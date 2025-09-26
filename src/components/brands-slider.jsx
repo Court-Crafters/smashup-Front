@@ -21,7 +21,7 @@ const BrandSliderSection = () => {
       <div className="brand-slider-container-wrapper style1">
         <div className="container">
           <div className="brand-slider-wrapper style1">
-            <h2 className="single-section-title pb-4">
+            <h2 className="single-section-title pb-4" style={{ color: "#1a22b7" }}>
             Join The Network Of Excellence.
             </h2>
             <Swiper

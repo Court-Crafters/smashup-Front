@@ -67,11 +67,12 @@ const HeroSection = () => {
                     >
                       <div className="intro-section-title">
                         <div className="intro-subtitle">
-                          <span>P4P!</span>Follow Your Passion{" "}
+                          <span style={{ color: "#1a22b7" }}>P4P</span>Follow Your Passion{" "}
                         </div>
                         <h3
                           className="intro-title wow fadeInUp"
                           data-wow-delay=".2s"
+                           style={{ color: "#1a22b7" }}
                         >
                           Padel For Passion is coming soon!
                         </h3>
@@ -89,6 +90,7 @@ const HeroSection = () => {
                         <p
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
+                           style={{ color: "#1a22b7" }}
                         >
                           &quot;Padel-4-Passion&quot; unites players and
                           coaches, making padel more exciting than ever. Find
