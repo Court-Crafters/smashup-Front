@@ -78,8 +78,7 @@ export default function AboutUs() {
                       data-wow-delay=".4s"
                       style={{ color: "#1a22b7" }}
                     >
-                      Padel for Passion is a one-stop app for all this sport
-                      enthusiasts
+                      Our solution brings everything padel players need into one application.
                     </h2>
 
                     <p

@@ -41,41 +41,75 @@ const HeroSection = () => {
         <div className="intro-container-wrapper style1">
           <div className="container">
             <div className="intro-wrapper style1 fix">
-              <div className="shape1">
-                <img src="assets/images/shape/introShape1_1.png" alt="shape" />
-              </div>
-              <div className="shape2">
-                <img src="assets/images/shape/introShape1_2.png" alt="shape" />
-              </div>
-              <div className="shape3 d-none d-xxl-block cir36">
-                <img src="assets/images/shape/introShape1_3.png" alt="shape" />
-              </div>
-              <div className="shape4 d-none d-xxl-block cir36">
-                <img src="assets/images/shape/introShape1_4.png" alt="shape" />
-              </div>
-              <div className="shape5 d-none d-xxl-block cir36">
-                <img src="assets/images/shape/introShape1_5.png" alt="shape" />
-              </div>
+              {!isMobile && (
+                <>
+                  <div className="shape1">
+                    <img src="assets/images/shape/introShape1_1.png" alt="shape" />
+                  </div>
+                  <div className="shape2">
+                    <img src="assets/images/shape/introShape1_2.png" alt="shape" />
+                  </div>
+                  <div className="shape3 d-none d-xxl-block cir36">
+                    <img src="assets/images/shape/introShape1_3.png" alt="shape" />
+                  </div>
+                  <div className="shape4 d-none d-xxl-block cir36">
+                    <img src="assets/images/shape/introShape1_4.png" alt="shape" />
+                  </div>
+                  <div className="shape5 d-none d-xxl-block cir36">
+                    <img src="assets/images/shape/introShape1_5.png" alt="shape" />
+                  </div>
+                </>
+              )}
               <div className="container">
                 <div className="row">
                   <div className="col-xl-7 order-2 order-xl-1">
                     <div
                       className="intro-content"
-                      style={
-                        isMobile ? { marginTop: "0px", paddingTop: "0px" } : {}
-                      }
+                      style={isMobile ? { marginTop: "0px", paddingTop: "0px" } : {}}
                     >
                       <div className="intro-section-title">
-                        <div className="intro-subtitle">
-                          <span style={{ color: "#1a22b7" }}>P4P</span>Follow Your Passion{" "}
-                        </div>
+                        {!isMobile && (
+                          <div className="intro-subtitle">
+                            <span style={{ color: "#1a22b7" }}>P4P</span>Follow Your
+                            Passion{" "}
+                          </div>
+                        )}
+
+                        {/* Updated Title */}
                         <h3
                           className="intro-title wow fadeInUp"
                           data-wow-delay=".2s"
-                           style={{ color: "#1a22b7" }}
+                          style={
+                            isMobile
+                              ? {
+                                textAlign: "center",
+                                color: "#1a22b7",
+                                display: "inline-block",
+                                width: "100%",
+                              }
+                              : { color: "#1a22b7" }
+                          }
                         >
-                          Padel For Passion is coming soon!
+                          Padel For Passion{" "}
+                          {isMobile ? (
+                            <span
+                              style={{
+                                display: "inline-block",
+                                backgroundColor: "#1a22b7",
+                                color: "white",
+                                padding: "1px 8px", // reduced left/right space
+                                borderRadius: "6px",
+                                textAlign: "center",
+                                fontSize: "25px", // reduced font size
+                              }}
+                            >
+                              coming soon
+                            </span>
+                          ) : (
+                            "coming soon"
+                          )}
                         </h3>
+
                         {isMobile && (
                           <img
                             className="main-thumb img-custom-anim-right wow fadeInUp"
@@ -86,20 +120,27 @@ const HeroSection = () => {
                             style={{ display: "block", margin: "0 auto" }}
                           />
                         )}
+                        {isMobile && (
+                          <div
+                            className="intro-subtitle"
+                            style={{
+                              fontSize: "14px", // smaller text
+                              marginTop: "12px", // space from item above
+                            }}
+                          >
+                            <span style={{  fontSize: "14px", color: "#1a22b7" }}>P4P</span> Follow Your Passion
+                          </div>
+                        )}
 
                         <p
                           className="intro-desc wow fadeInUp"
                           data-wow-delay=".4s"
-                           style={{ color: "#1a22b7" }}
+                          style={{ color: "#1a22b7" }}
                         >
-                          &quot;Padel-4-Passion&quot; unites players and
-                          coaches, making padel more exciting than ever. Find
-                          your perfect match, join leagues, book sessions, and
-                          connect with the community—all in one app. Whether
-                          you’re here to play, compete, or shop, your padel
-                          journey starts now!
+                          Padel for Passion brings players and coaches together to make padel more exciting than ever. Discover your perfect match, join leagues, book sessions, and connect with the community in one app. Whether you want to play, compete, or shop, your padel journey starts here.
                         </p>
                       </div>
+
                       <div
                         className="btn-wrapper style1 wow fadeInUp"
                         data-wow-delay=".6s"
@@ -160,6 +201,7 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="col-xl-5 order-1 order-xl-2">
                     <div className="intro-thumb">
                       <div className="thumbShape1">
@@ -191,6 +233,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+
     </>
   );
 };

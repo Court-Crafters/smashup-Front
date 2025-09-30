@@ -3,7 +3,7 @@ import { Container, Typography, Box } from "@mui/material";
 
 const ComingSoonPage = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-06-01") - +new Date();
+    const difference = +new Date("2025-10-15") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
